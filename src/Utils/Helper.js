@@ -4,7 +4,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export const oauthConfig = {
     issuer: 'https://accounts.google.com',
-    clientId: '1030848012340-0h5783pca718hk3gonl8n3v4loimofbd.apps.googleusercontent.com', 
+    clientId: 'YOUR_CLIENT_ID', 
     redirectUrl: 'com.mailandroid.metrics:/oauth2redirect/google',
     scopes: ['openid', 'profile', 'email', 'https://mail.google.com/', 'https://www.googleapis.com/auth/userinfo.email', 'https://www.googleapis.com/auth/userinfo.profile'], // Scopes for Gmail
 };
