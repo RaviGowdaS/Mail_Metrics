@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, StyleSheet, ActivityIndicator, TouchableOpacity, Dimensions, Alert } from 'react-native';
 import { WebView } from 'react-native-webview';
-import Icon from 'react-native-vector-icons/MaterialIcons'; // Import the icon package
+import Icon from 'react-native-vector-icons/MaterialIcons'; 
 
 const { height: screenHeight } = Dimensions.get('window');
 
