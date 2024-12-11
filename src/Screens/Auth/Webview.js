@@ -3,7 +3,6 @@ import { View, StyleSheet, ActivityIndicator, TouchableOpacity, Dimensions, Aler
 import { WebView } from 'react-native-webview';
 import Icon from 'react-native-vector-icons/MaterialIcons'; // Import the icon package
 
-// Get screen height
 const { height: screenHeight } = Dimensions.get('window');
 
 const OAuthWebView = ({ authUrl, handleWebViewChange}) => {
