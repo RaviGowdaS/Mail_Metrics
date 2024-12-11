@@ -58,7 +58,7 @@ export const handleRefresh = (AuthInfo) => async (dispatch, getState) => {
     dispatch({ type: Actions.Login_Pending });
 
   const tokenUrl = 'https://oauth2.googleapis.com/token';
-  const clientId = '1030848012340-0h5783pca718hk3gonl8n3v4loimofbd.apps.googleusercontent.com';
+  const clientId = 'Your_ClientID';
 
   try {
     const response = await axios.post(tokenUrl, {
