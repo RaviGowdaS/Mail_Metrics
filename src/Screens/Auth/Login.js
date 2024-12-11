@@ -20,7 +20,7 @@ const LoginScreen = (props) => {
   const [authUrl, setAuthUrl] = React.useState('');
   const [isCheck2faUpdated, setIsCheck2faUpdated] = React.useState(false);
 
-  const clientId = '1030848012340-0h5783pca718hk3gonl8n3v4loimofbd.apps.googleusercontent.com';
+  const clientId = 'Your_ClientID';
   const redirectUri = 'com.mailandroid.metrics:/oauth2redirect/google';
   const responseType = 'code';
   const scope = 'openid profile email https://mail.google.com/';
