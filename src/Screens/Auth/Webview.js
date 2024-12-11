@@ -27,7 +27,7 @@ const OAuthWebView = ({ authUrl, handleWebViewChange}) => {
         onLoadEnd={() => setLoading(false)}
         onNavigationStateChange={handleWebViewNavigationStateChange}
         incognito={true}
-        style={[styles.webview, { height: screenHeight * 0.7 }]} // 70% of screen height
+        style={[styles.webview, { height: screenHeight * 0.7 }]} 
         userAgent="Chrome/18.0.1025.133 Mobile Safari/535.19"
       />
     </View>
@@ -37,7 +37,7 @@ const OAuthWebView = ({ authUrl, handleWebViewChange}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    position: 'relative', // Ensure the close button is on top of the WebView
+    position: 'relative', 
   },
   loadingIndicator: {
     position: 'absolute',
@@ -48,16 +48,16 @@ const styles = StyleSheet.create({
   },
   closeButton: {
     position: 'absolute',
-    top: 20, // Close button at the top
-    right: 20, // Close button on the right side
-    zIndex: 10, // Ensure the button is above the WebView
-    backgroundColor: 'rgba(0, 0, 0, 0.3)', // Optional: semi-transparent background for the button
+    top: 20, 
+    right: 20, 
+    zIndex: 10, 
+    backgroundColor: 'rgba(0, 0, 0, 0.3)', 
     borderRadius: 50,
     padding: 10,
   },
   webview: {
     flex: 1,
-    borderRadius: 10, // Optional: rounded corners for the WebView
+    borderRadius: 10,
   },
 });
 
