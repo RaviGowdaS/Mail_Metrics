@@ -5,6 +5,7 @@ export const initialState = {
   userInfo: undefined,
   LoginError: "",
   isLoading: true,
+  check2FA: false
 }
 
 
@@ -21,6 +22,11 @@ const AuthReducer = (state = initialState, action) => {
         ...state,
         userInfo: action.payload,
         isLoading: false
+      }
+      case Actions.Check2FA_State:
+      return {
+        ...state,
+        check2FA: true,
       }
     case Actions.Login_Failure:
       return {

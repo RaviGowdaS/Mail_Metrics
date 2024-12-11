@@ -106,7 +106,7 @@ export default function Navigation() {
             getLocalStorageInfo('AuthInfo')
                 .then(res => {
                     if (res != null) {
-                        const isExpired = moment().utc().isAfter(res.accessTokenExpirationDate);
+                        const isExpired = moment().utc().isAfter(res.access_tokenExpirationDate);
                         if (isExpired) {
                             dispatch(handleRefresh(res))
                         } else {
@@ -121,7 +121,7 @@ export default function Navigation() {
 
 
     const handleNav = async (data) => {
-        await loginToImap(data.email, data.accessToken)
+        await loginToImap(data.email, data.access_token)
             .then(res => {
                 if (res.status == 'SUCCESS') {
                     dispatch({ type: 'Login_Success', payload: data })

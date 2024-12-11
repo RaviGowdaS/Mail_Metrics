@@ -42,6 +42,7 @@ const Dashboard = (props) => {
                 setLoading(false);
             })
             .catch((error) => {
+                setLoading(false);
                 console.error('Error fetching emails:', error);
             });
     };
